@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <v-img :src="require(`@/assets/${image}`)" width="100%" height="200px"></v-img>
+    <v-img :src="require(`@/assets/${image}`)" width="100%" height="250px"></v-img>
     <!-- <div class="borders"></div> -->
   </div>
 </template>
