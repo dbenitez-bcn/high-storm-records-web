@@ -2,26 +2,37 @@
   <v-container>
     <v-row>
       <v-col cols="12" sm="6">
-        <storm-image />
+        <storm-image :image="'img/microphone.jpg'" />
       </v-col>
       <v-col cols="12" sm="6">
-        <div class="testerino"></div>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12" sm="6">
-        <div class="testerino"></div>
-      </v-col>
-      <v-col cols="12" sm="6">
-        <div class="testerino"></div>
+        <text-information
+        :title="'Graba en nuestras instalaciones'"
+        :body="`Highstorm records es una discográfica
+         con espacio de creación musical propio y
+         con un equipo: profesional, cercano y apasionado por el sonido.`"/>
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12" sm="6">
-        <div class="testerino"></div>
+        <storm-image :image="'img/videoclip.jpg'" />
       </v-col>
       <v-col cols="12" sm="6">
-        <div class="testerino"></div>
+        <text-information
+        :title="'Graba en nuestras instalaciones'"
+        :body="`Highstorm records es una discográfica
+         con espacio de creación musical propio y
+         con un equipo: profesional, cercano y apasionado por el sonido.`"/>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12" sm="6">
+        <storm-image :image="'img/storm_session.jpg'" />
+      </v-col>
+      <v-col cols="12" sm="6">
+        <text-information
+        :title="'Las storm sessions'"
+        :body="`Las storm sessions son la perfecta combinacion de
+         audio y videoo. Todo en nuestras instalaciones.`"/>
       </v-col>
     </v-row>
   </v-container>
@@ -30,11 +41,13 @@
 <script lang="ts">
 import Vue from 'vue';
 import StormImage from '@/components/StormImage.vue';
+import TextInformation from '@/components/TextInformation.vue';
 
 export default Vue.extend({
   name: 'InformationSection',
   components: {
     StormImage,
+    TextInformation,
   },
 });
 </script>
