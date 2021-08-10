@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg"></div>
-    <div class="borders m-2"></div>
+    <div class="borders"></div>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default Vue.extend({
 <style scoped>
 .borders {
   width: 100%;
-  height: 200px;
+  height: 150px;
   border: solid 8px black;
 }
 </style>
