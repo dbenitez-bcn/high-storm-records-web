@@ -1,16 +1,22 @@
 <template>
-  <div>
-    <div class="bg"></div>
-    <div class="borders"></div>
+  <div class="">
+    <v-img :src="require(`@/assets/${image}`)" width="100%" height="200px"></v-img>
+    <!-- <div class="borders"></div> -->
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import Component from 'vue-class-component';
 
-export default Vue.extend({
+@Component({
   name: 'StormImage',
-});
+  props: {
+    image: String,
+  },
+})
+export default class StormImage extends Vue {
+}
 </script>
 
 <style scoped>
