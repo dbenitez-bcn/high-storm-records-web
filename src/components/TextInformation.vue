@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h2>{{title}}</h2>
-        <p>{{body}}</p>
+        <h2 class="text-center text-sm-left">{{title}}</h2>
+        <p class="text-justify">{{body}}</p>
     </div>
 </template>
 
