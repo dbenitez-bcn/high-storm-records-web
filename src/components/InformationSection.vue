@@ -28,10 +28,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import Vue from 'vue';
 import StormImage from '@/components/StormImage.vue';
 
-export default defineComponent({
+export default Vue.extend({
   name: 'InformationSection',
   components: {
     StormImage,
