@@ -29,9 +29,12 @@ jobs:
       - run:
           name: Build 
           command: npm build
+      - run:
+            name: Firebase Deploy
+            command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting:highstormrecords
 
 workflows:
-  sample: 
+  workflow: 
     jobs:
       - build-and-deploy:
           filters:
