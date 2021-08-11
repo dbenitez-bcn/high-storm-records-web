@@ -1,6 +1,6 @@
 <template>
-  <v-footer padless>
-    <v-col class="text-center" cols="12">
+  <v-footer padless class="black">
+    <v-col class="text-center white--text" cols="12">
       {{ new Date().getFullYear() }} — <strong>High Storm Records&#174;</strong>
     </v-col>
   </v-footer>
