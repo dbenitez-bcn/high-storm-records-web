@@ -20,15 +20,25 @@ jobs:
     # Then run your tests!
     # CircleCI will report the results back to your VCS provider.
     steps:
-      # Checkout the code as the first step.
-      - checkout
-      # Next, the node orb's install-packages step will install the dependencies from a package.json.
-      # The orb install-packages step will also automatically cache them for faster future runs.
-      - node/install-packages
-
-      - run:
-          name: Build 
-          command: npm build
+        - checkout
+        # Download and cache dependencies
+        - restore_cache:
+              keys:
+                  - v1-dependencies-{{ checksum "package.json" }}
+                  - v1-dependencies-
+        - run:
+              name: Install Dependencies
+              command: npm install
+        - save_cache:
+              key: v1-npm-deps-{{ checksum "package-lock.json" }}
+              paths:
+                  - ./node_modules
+        - run:
+              name: Build
+              command: npm build
+        # - run:
+        #       name: Firebase Deploy
+        #       command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN" --only hosting
 
 workflows:
   sample: 
