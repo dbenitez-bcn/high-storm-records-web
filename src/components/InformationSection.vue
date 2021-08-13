@@ -31,7 +31,7 @@
       <v-col cols="12" sm="6">
         <text-information
         :title="'Las storm sessions'"
-        :body="`Las storm sessions son la perfecta combinacion de
+        :body="`Las storm sessions son la perfecta combinación de
          audio y videoo. Todo en nuestras instalaciones.`"/>
       </v-col>
     </v-row>
