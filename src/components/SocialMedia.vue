@@ -31,8 +31,8 @@ export default class SocialMedia extends Vue {
       },
       {
         icon: 'facebook',
-        title: 'High storm records',
-        link: 'https://www.youtube.com/channel/UCIoxczOpGkMuzRqM7RciJSw',
+        title: 'High Storm Records',
+        link: 'https://www.facebook.com/High-Storm-Records-157266163110973/',
       },
     ];
 }
