@@ -1,5 +1,6 @@
 <template>
-  <div :class="getClassBasedOnBreakpoint">
+  <div class="d-flex justify-center align-center" :class="getClassBasedOnBreakpoint">
+    <v-img src="../assets/icons/logo.svg" max-width="30vw" max-height="30vw"></v-img>
   </div>
 </template>
 
