@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row justify="center">
+    <v-row justify="center pt-8 pb-12">
       <v-col cols="12" sm="6" md="4">
         <div class="d-flex flex-column">
           <v-btn class="white--text" color="#C13584">
