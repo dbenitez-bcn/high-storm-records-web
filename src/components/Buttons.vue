@@ -17,7 +17,7 @@
             <div class="storm-divider black"></div>
           </div>
           <v-btn class="white--text" color="black"
-            >highstormrecords@gmail.com</v-btn
+            >contact@highstormrecords.com</v-btn
           >
         </div>
       </v-col>
