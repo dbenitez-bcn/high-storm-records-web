@@ -21,7 +21,7 @@ export default class SocialMedia extends Vue {
     private contacts = [
       {
         icon: 'email',
-        title: 'highstormrecords@gmail.com',
+        title: 'contact@highstormrecords.com',
       },
       {
         icon: 'phone',
